@@ -1,21 +1,20 @@
 @import "bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
 
 body {
   background: image_url('background.png');
 }
 .navbar-brand {
     color: white;
-    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'Gochi Hand', cursive;
     text-shadow: 2px 2px blue;
     letter-spacing: 4px;
 }
 .navbar-brand:hover, .navbar-brand:hover {
-    color: white;
-    font-family: 'Rubik Mono One', sans-serif;
-    text-shadow: 2px 2px white;
+    font-family: 'Gochi Hand', cursive;
     letter-spacing: 4px;
-    color: red;
+		text-shadow: none;
+		color: white;
 }
 .navbar {
     font-family: "Helvetica Neue", Helvetica;
@@ -88,4 +87,56 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .third {
 	background-color: rgb(70,130,180);
 }
-
+.user-box {
+	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+	border-radius:5px;
+	margin: 3px;
+	border: 1px solid whitesmoke;
+	color: whitesmoke;
+	background-color: #008080;
+	padding: 10px;
+	margin-bottom: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.user-box h2, .user-box h1 {
+	margin: 10px;
+}
+.lnks {
+	color: black;
+	font-weight: bold;
+}
+.nav-link {
+	color: white;
+	font-size: 13px;
+	font-weight: bold;
+}
+.nav-link:hover, .nav-link:focus {
+	color: rgb(87, 136, 241);
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+html {
+  height: 100%;
+}
+#flex-content-container {
+	flex: 1;
+}
+#footer {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  background-color: rgba(36, 32, 33, 0.9);
+  color: white;
+  font-family: "Helvetica Neue", Helvetica;
+	padding: 10px 0px;
+	margin-top: 30px;
+}
+foooter a {
+	color: white;
+}
