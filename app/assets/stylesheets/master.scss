@@ -1,6 +1,9 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
 
+body {
+  background: image_url('background.png');
+}
 .navbar-brand {
     color: white;
     font-family: 'Rubik Mono One', sans-serif;
@@ -37,6 +40,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	background: rgba(0, 0, 0, 0.5);
 	color: white;
 	border: 1px dotted white;
+	border-radius: 3px;
 }
 .frosty h1 {
   font-family: "Helvetica Neue", Helvetica;
@@ -44,6 +48,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	margin: 10px;
 	margin-bottom: 0 !important;
 	padding: 5px;
+	text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 }
 .frosty h2 {
   font-family: "Helvetica Neue", Helvetica;
@@ -59,3 +64,28 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .btn {
   border-radius: 0;
 }
+.feature {
+  width: 100%;
+  padding-left: 5%;
+	padding-right: 5%;
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	color: whitesmoke;
+}
+.feature-box {
+	border-radius:2px;
+	margin: 3px;
+	border: 1px solid whitesmoke;
+}
+.feature h3 {
+	padding: 5px;
+}
+.first {
+	background-color: grey;
+}
+.second {
+	background-color: rgb(60,179,113);
+}
+.third {
+	background-color: rgb(70,130,180);
+}
+
