@@ -1,20 +1,22 @@
 <br />
-
+<br />
 <div class="course-box col-10 offset-1">
-	<h1 class="text-center">Learn about new places today</h1>
+	<h1 class="text-center">Expand Your <u>Knowledge Base</u></h1>
 	<br />
+	<h2 class="text-center">Course Offerings:</h2>
+	<br /><br />
 	<% @courses.each do |course|%>
-		<h2 class="text-center"><%= course.title %></h2>
+		<h3 class="text-center">
+		<%= link_to course.title, course_path(course) %></h3>
 		<br />
 		<div class="row">
 			<div class="col-sm-8 col-12">
 				<%= course.description %>
 			</div>
 			<div class="col-sm-4 col-12 text-center">
-				<%= link_to 'Button', '#', class: 'btn btn-primary btn-large' %>
+				<%= link_to 'More Details...', course_path(course), class: 'btn btn-primary btn-large' %>
 			</div>
 		</div>
 		<hr />
 	<% end %>
 </div>
-<br class="clear" />

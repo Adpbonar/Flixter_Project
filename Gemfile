@@ -66,6 +66,7 @@ gem 'bootstrap', '4.0.0.alpha6'
 gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'devise'
+gem 'redactor2_rails'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'

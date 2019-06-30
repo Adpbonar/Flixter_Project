@@ -131,9 +131,12 @@ body {
 	color: white;
 	font-family: "Helvetica Neue", Helvetica;
 	padding: 10px 0px;
-	margin-top: 30px;
+	margin-top: 50px;
 	color: #f2efe6;
 	border-top: 3px solid #b3aeae;
+	bottom: 1px;
+	width: 100%;
+	padding: 10px;
 }
 .footer a {
 	color: white;
@@ -171,5 +174,29 @@ body {
 	background-color:	#FFEEEE;
 	border-radius: 3px;
 	padding: 2px 8px 2px 8px;
+	margin: 10px;
+} 
+.help-block {
+	color: #ff3333;
+	background-color:	#FFEEEE;
+	border-radius: 3px;
+	padding: 2px 8px 2px 8px;
+	margin: 10px;
+}
+.info-box {
+	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+	border-radius:2px;
+	margin: 3px;
+	border: 1px solid grey;
+	background-color: rgb(255,255,255);
+	padding: 10px;
+	width: 95%;
+	margin-bottom: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.info-box h2, .user-box h1 {
 	margin: 10px;
 }
