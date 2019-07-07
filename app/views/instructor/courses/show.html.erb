@@ -18,19 +18,22 @@
 			<li>
 				<h2><%= section.title %></h2>
 				<%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'float-right btn btn-primary btn-sm' %>
-				<ul>
+				<ol>
 					<% section.lessons.each do |lesson| %>
 						<li>
-						<h3><%= lesson.title%></h3>
-						<b><%= lesson.subtitle %></b>
-						<br />
-						<br />
-						<h4>Course Text for Lesson <%= lesson.title %></h4>
-						<br />
-						<%= lesson.course_text %>
-					<% end %>
+							<h3><%= lesson.title%></h3>
+							<b><%= lesson.subtitle %></b>
+							<br />
+							<br />
+							<% if lesson.course_text.present? %>
+								<h4>Course Text for Lesson <%= lesson.title %></h4>
+								<br />
+								<%= lesson.course_text %>
+							<% end %>
+							<br /><br />
+						<% end %>
 					</li>
-				</ul>
+				</ol>
 				<br class="clear" />
 			</li>
 		<% end %>
