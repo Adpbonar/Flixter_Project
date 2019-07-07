@@ -2,33 +2,30 @@
 <div class="course-box col-10 offset-1">
 	<br />
 	<div class="row">
-		<h1 class="text-center col-4"><%= @course.title %></h1>
+		<h1 class="text-center col-4"><%= current_course.title %></h1>
 		<div class="text-center col-8">
-			<%= link_to 'Add a new section...', new_instructor_course_section_path(@course), class: 'btn btn-primary btn-lg' %>
+			<%= link_to 'Add a new section...', new_instructor_course_section_path(current_course), class: 'btn btn-primary btn-lg' %>
 		</div>
 	</div>
 	<br />
 	<hr />
 	<br />
-	<%= link_to 'Preview As Student...', course_path(@course), class: 'btn btn-warning float-right'%>
+	<%= link_to 'Preview As Student...', course_path(current_course), class: 'btn btn-warning float-right'%>
 	<br class="clear">
 	<br />
 	<ul>
-		<% @course.sections.each do |section| %>
+		<% current_course.sections.each do |section| %>
 			<li>
 				<h2><%= section.title %></h2>
 				<%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'float-right btn btn-primary btn-sm' %>
-				<ol>
+				<ol class="lesson">
 					<% section.lessons.each do |lesson| %>
 						<li>
 							<h3><%= lesson.title%></h3>
-							<b><%= lesson.subtitle %></b>
-							<br />
-							<br />
+							<p class="subtitle"><%= lesson.subtitle %></p>
 							<% if lesson.course_text.present? %>
 								<h4>Course Text for Lesson <%= lesson.title %></h4>
-								<br />
-								<%= lesson.course_text %>
+								<p class="lesson-text"><%= lesson.course_text %></p>
 							<% end %>
 							<br /><br />
 						<% end %>
