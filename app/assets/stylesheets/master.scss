@@ -134,9 +134,11 @@ body {
 	margin-top: 50px;
 	color: #f2efe6;
 	border-top: 3px solid #b3aeae;
-	bottom: 1px;
+	bottom: 1px !important;
 	width: 100%;
 	padding: 10px;
+	position: relative;
+
 }
 .footer a {
 	color: white;
@@ -210,4 +212,8 @@ body {
 }
 .lesson-text {
 	font-size: 1.25rem;
+}
+.section {
+	font-size: 1.5rem;
+	font-weight: 500;
 }

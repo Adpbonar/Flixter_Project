@@ -1,0 +1,13 @@
+<br />
+<br />
+<div class="info-box">
+ <h1><%= current_lesson.title %></h1>
+  <p>
+    <%= current_lesson.subtitle %>
+  </p>
+  <% if current_lesson.course_text.present? %>
+    <br /><br/>
+    <h2>Supplementary Material</h2>
+    <br />
+    <p class="lesson-text"><%= current_lesson.course_text %></p>
+  <% end %>
