@@ -18,4 +18,6 @@
 //= require popper
 //= require tether
 //= require bootstrap-sprockets
+//= require tinymce
+//= require tinymce-jquery
 //= require_tree .

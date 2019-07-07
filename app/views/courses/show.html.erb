@@ -2,6 +2,11 @@
 <br />
 <div class="info-box">
   <h1 class="text-center"><%= @course.title %></h1>
+
+  <% if @course.image.present? %>
+    <br>
+    <center><%= image_tag @course.image.url, class: 'img-fluid' %></center>
+  <% end %>
   <br />
   <div class="row">
     <div class="col-sm-4 col-12 text-center">
@@ -23,7 +28,7 @@
   <div class="col-12">
     <% @course.sections.each do |section| %>
       <div class="section">
-        <center><%= section.title %></center>
+        <h2 class="text-center"><%= section.title %></h2>
         <hr />
        <% section.lessons.each do |lesson| %>
           <div class="lesson">
