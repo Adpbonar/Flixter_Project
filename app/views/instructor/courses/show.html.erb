@@ -29,9 +29,9 @@
 						<li>
 							<h3><%= lesson.title%></h3>
 							<p class="subtitle"><%= lesson.subtitle %></p>
-							<% if lesson.course_text.present? %><%= tinymce_assets %>
+							<% if lesson.course_text.present? %>
 								<h4>Course Text for Lesson <%= lesson.title %></h4>
-								<p class="lesson-text"><%= lesson.course_text %></p>
+								<p class="lesson-text"><%= sanitize lesson.course_text %></p>
 							<% end %>
 							<br /><br />
 						<% end %>
