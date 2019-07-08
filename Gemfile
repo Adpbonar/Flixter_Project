@@ -72,6 +72,7 @@ gem "figaro"
 gem "fog-aws"
 gem 'tinymce-rails'
 gem "mini_magick"
+gem 'carrierwave-aws'
 
 
 source 'https://rails-assets.org' do
