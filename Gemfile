@@ -66,7 +66,6 @@ gem 'bootstrap', '4.0.0.alpha6'
 gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'devise'
-gem 'redactor2_rails'
 gem 'carrierwave', '>= 2.0.0.rc', '< 3.0'
 gem "figaro"
 gem "fog-aws"

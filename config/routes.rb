@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  mount Redactor2Rails::Engine => '/redactor2_rails'
   devise_for :users
   root 'static_pages#index'
-  resources :courses, only: [:index, :show]
+  resources :courses, only: [:index, :show] do
+    resources :enrollments, only: :create
+  end
   resources :lessons, only: [:show]
   namespace :instructor do 
     resources :sections, only: [] do

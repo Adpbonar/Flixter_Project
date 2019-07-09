@@ -4,6 +4,10 @@
 body {
   background: image_url('background.png');
 }
+::selection {
+  background-color: grey;
+  color: blue;
+}
 .navbar-brand {
     color: white;
     font-family: 'Gochi Hand', cursive;
@@ -154,12 +158,15 @@ body {
 	border-radius:2px;
 	margin: 3px;
 	border: 1px solid grey;
-	color: grey;
+	color: black;
 	background-color: #e8e8e8e8;
 	padding: 10px;
 	margin-bottom: 15px;
 	margin-right: auto;
 	margin-left: auto;
+}
+.course-box p a {
+	color: black;
 }
 .course-box h2, .user-box h1 {
 	margin: 10px;
@@ -202,7 +209,7 @@ body {
 .info-box h2, .user-box h1 {
 	margin: 10px;
 }
-.lesson {
+.lesson_ol {
 	font-size: 1.75rem;
 	font-weight: 500;
 }
@@ -222,7 +229,9 @@ body {
 	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
-	border: 5px solid blue;
+	border-color: #5DADE2 #2874A6 #2874A6 #5DADE2;
+	border-width: 4px 4px 4px 4px;
+	border-style: solid;
 	border-radius: 5px;
 	-moz-box-shadow: 1px 1px 2px 0 rgb(105,105,105);
   -webkit-box-shadow: 1px 1px 2px 0 rgb(105,105,105);
@@ -233,7 +242,7 @@ body {
 	left: 50%;
 	margin-top: -0.75em;
 	margin-left: -1.5em;
-	color: blue;
+	color: #1B4F72;
 }
 .lesson {
 	background-color: #1B4F72;

@@ -3,11 +3,11 @@
 <div class="course-box col-10 offset-1">
 	<h1 class="text-center">Expand Your <u>Knowledge Base</u></h1>
 	<br />
-	<h2 class="text-center">Course Offerings:</h2>
-	<br /><br />
+	<hr />
+	<br />
 	<% @courses.each do |course| %>
 		<h3 class="text-center">
-		<%= link_to course.title, course_path(course) %>
+		<p><%= link_to course.title, course_path(course) %></p>
 		</h3>
 		<% if course.image.present? %>
 			<br />

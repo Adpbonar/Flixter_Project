@@ -1,5 +1,10 @@
 toolbar:
-  - styleselect | bold italic | undo redo | link | image
+  - styleselect | bold italic underline | align | undo redo | link | table | numlist bullist | searchreplace spellchecker
 plugins:
-  - image
+  - table
   - link
+  - lists
+  - advlist
+  - searchreplace
+  - spellchecker
+  
