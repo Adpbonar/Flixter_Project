@@ -225,6 +225,7 @@ body {
 }
 .lesson-text {
 	font-size: 1.25rem;
+	padding: 10px;
 }
 .section {
 	font-size: 1.5rem;
@@ -274,8 +275,11 @@ video {
 .video {
 	padding-top: 10px;
 	padding-bottom: 10px;
+	margin-right: auto;
+	margin-left: auto;
 	background-color: #e8e8e8;
 	width: 100%;
-	border: 2px solid blue;
-	box-shadow: 2px 2px #5DADE2;
+	border-top: 4px solid blue;
+	border-bottom: 4px solid blue;
+	border-radius: 1px;
 }
