@@ -31,7 +31,7 @@
 							<p class="subtitle"><%= lesson.subtitle %></p>
 							<% if lesson.course_text.present? %>
 								<h4>Course Text for Lesson <%= lesson.title %></h4>
-								<p class="lesson-text"><%= sanitize lesson.course_text %></p>
+								<p class="lesson-text"><%= lesson.course_text.html_safe %></p>
 							<% end %>
 							<br /><br />
 						<% end %>

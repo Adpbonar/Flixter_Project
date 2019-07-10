@@ -27,6 +27,6 @@
     <br />
     <hr />
     <br />
-    <p class="lesson-text"><%= sanitize current_lesson.course_text %></p>
+    <p class="lesson-text"><%= current_lesson.course_text.html_safe %></p>
   <% end %>
 </div
