@@ -206,6 +206,13 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 }
+.info-box img {
+	width: 100%;
+	border-right: 4px solid green;
+	border-left: 4px solid green;
+	border-radius: 4px;
+}
+}
 .info-box h2, .user-box h1 {
 	margin: 10px;
 }
