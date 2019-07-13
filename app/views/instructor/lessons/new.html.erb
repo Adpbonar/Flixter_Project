@@ -3,7 +3,6 @@
   <h1>Add a new Lesson</h1>
   <br />
   <%= simple_form_for @lesson, url: instructor_section_lessons_path(current_section) do |f| %>
-    <%= tinymce_assets %>
     <%= f.input :title %>
     <%= f.input :subtitle %>
     <%= f.input :video %>
@@ -16,3 +15,22 @@
     <br />
   <% end %>
 </div>
+
+<script>
+window.onload = function () {
+    (function()
+{
+  if( window.localStorage )
+  {
+    if( !localStorage.getItem( 'firstLoad' ) )
+    {
+      localStorage[ 'firstLoad' ] = true;
+      window.location.reload();
+    }  
+
+    else
+      localStorage.removeItem( 'firstLoad' );
+  }
+})();
+// https://www.webdeveloper.com/d/267853-auto-refresh-page-once-only-after-first-load/2  & https://stackoverflow.com/questions/27395483/refresh-reload-web-page-only-once - refresh page to load tinymce bar
+</script>
