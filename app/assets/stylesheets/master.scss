@@ -235,8 +235,6 @@ body {
 video {
 	width: auto;
 	height: auto;
-	margin-left: auto;
-	margin-right: auto;
 	border-color: #5DADE2 #2874A6 #2874A6 #5DADE2;
 	border-width: 4px 4px 4px 4px;
 	border-style: solid;
@@ -281,4 +279,7 @@ video {
 	border-top: 4px solid blue;
 	border-bottom: 4px solid blue;
 	border-radius: 1px;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
 }
