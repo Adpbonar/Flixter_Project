@@ -48,14 +48,36 @@ $(function() {
 	<br />
 	<ul class="sections">
 		<% current_course.sections.rank(:row_order).each do |section| %>
-		<li data-update-url="<%= instructor_section_path(section) %>">
-				<h2><%= section.title %></h2>
-				<%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'float-right btn btn-primary btn-sm' %>
+		<li data-update-url="<%= instructor_section_path(section) %>" class="section-li">
+			<div class="header">
+				<span class="fa fa-ellipsis-v"></span>
+				<%= "#{section.title}"	%> 
+				<br />
+				<p class="in-course"><%= "(In Course: #{current_course.title})" %></p>
+			</div>
+			<br class="clear" />
+				<%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'float-right btn btn-success btn-sm border-btn' %>
+				<br />
+				<br />
 				<ul class="lessons">
 					<% section.lessons.rank(:row_order).each do |lesson| %>
             <li data-update-url="<%= instructor_lesson_path(lesson) %>">
-							<h3><%= lesson.title%></h3>
-							<p class="subtitle"><%= lesson.subtitle %></p>
+							<div class="row">
+								<div class="col-1">
+									<br />
+									<span class="fa fa-ellipsis-v"></span>
+								</div>
+								<div class="col-11 text-center">
+									<p>
+										<h3><%= "#{lesson.title}" %></h3>
+										<small><%= "(In Section: #{section.title})" %></small>
+									</p>
+									<p class="subtitle">
+										<%= lesson.subtitle %>
+									</p>
+								</div>
+							</div>
+							<br class="clear">
 						</li>
 					<% end%>
 				</ul>
