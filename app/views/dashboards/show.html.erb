@@ -1,0 +1,65 @@
+<br />
+<br />
+<div class="course-box col-10 offset-1">
+  <% if current_user.enrolled_courses.present? %>
+    <H1>What I'm Learning</h1>
+    <hr />
+    <br class="clear" />
+    <% current_user.enrolled_courses.each do |course| %>
+      <h3 class="text-center">
+        <%= link_to course.title, course_path(course) %>
+      </h3>
+      <% if course.image.present? %>
+        <br />
+        <center><%= image_tag course.image.url, class: 'img-fluid' %></center>
+        <br />
+      <% end %>
+        <div class="row">
+          <div class="col-12 col-sm-8">
+            <%= course.description %>
+          </div>
+          <div class="col12 col-sm-4 text-center">
+            <%= link_to "More Info...", course_path(course), class: 'btn btn-lg btn-primary' %>
+          </div>
+        </div>
+      <br />
+      <hr>
+      <br class="clear" />  
+    <% end %>
+    <% else%>
+      <h1 class="text-center"><%= link_to "Enroll in courses", courses_path %></h1>
+  <%end %>
+</div>
+<br />
+<br />
+<div class="course-box col-10 offset-1">
+  <% if current_user.courses.present? %>
+    <h1>What I'm Teaching</h1>
+    <hr />
+    <br class="clear">
+    <% current_user.courses.each do |course| %>
+      <h3 class="text-center">
+      <br />
+        <%= link_to course.title, course_path(course) %>
+      </h3>
+      <br />
+      <% if course.image.present? %>
+        <br />
+        <center><%= image_tag course.image.url, class: 'img-fluid' %></center>
+        <br />
+      <% end %>
+      <div class="row">
+        <div class="col-12 col-sm-8">
+          <%= course.description %>
+        </div>
+        <div class="col-12 col-sm-4 text-center">
+          <%= link_to "More Info...", course_path(course), class: 'btn btn-lg btn-primary' %>
+        </div>
+      </div>
+      <hr>
+      <br class="clear" />
+    <% end %>
+  <% else %>
+    <h1 class="text-center"><%= link_to 'You are teaching any courses at this time.',  new_instructor_course_path %></h1>
+  <% end %>
+</div>

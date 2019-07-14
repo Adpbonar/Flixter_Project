@@ -5,4 +5,7 @@ class Lesson < ApplicationRecord
   include RankedModel
   ranks :row_order, with_same: :section_id
 
+  validates :title, presence: true, length: { minimum: 4 }
+  validates :subtitle, presence: true, length: { minimum: 4 }
+
 end

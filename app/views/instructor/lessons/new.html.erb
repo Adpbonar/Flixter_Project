@@ -8,7 +8,7 @@
     <%= f.input :video %>
     <%= "Lesson Text" %>
     <br /><br />
-    <%= f.text_area :course_text, :class => "tinymce", :rows => 40, :cols => 120 %><%= tinymce %>
+    <%= f.text_area :course_text, :class => "tinymce", :rows => 40, :cols => 120 %>
     <br />
     <%= f.submit "Add Lesson", class: 'btn btn-success' %>
     <br />
@@ -16,15 +16,4 @@
   <% end %>
 </div>
 
-<script type="text/javascript">
-   if(window.location.href.substr(-2) !== "?r") {
-      window.location = window.location.href + "?r";
-    }
 
-    $(function() {
-      alert('If the text editor does not load, refresh the page before you begin creating the lesson.');
-    });
-
-
-// https://www.webdeveloper.com/d/267853-auto-refresh-page-once-only-after-first-load/2  & https://stackoverflow.com/questions/27395483/refresh-reload-web-page-only-once & https://stackoverflow.com/questions/6160415/reload-an-html-page-just-once-using-javascript- refresh page to load tinymce bar
-</script>

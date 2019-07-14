@@ -5,4 +5,6 @@ class Section < ApplicationRecord
   include RankedModel
   ranks :row_order, with_same: :course_id
 
+  validates :title, presence: true, length: { minimum: 4 }
+
 end
