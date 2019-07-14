@@ -1,32 +1,34 @@
 
 <br/> 
-<br /><div class="video">
-<h1 class="text-center"><%= current_lesson.title %></h1>
-<p class="text-center">
-  <b><%= current_lesson.subtitle %></b>
-</p>
-<% if current_lesson.video.present? %>
-  <br />
-  <center><video id="my-video" class="video-js vjs-big-play-centered vjs-fluid" controls preload="auto"
-poster="<%= image_path('black.jpg') %>" data-setup="{}">
-  <source src="<%= current_lesson.video.to_s %>" type='video/mp4'>
-  <noscript>
-    <p class="vjs-no-js">
-      To view this video please enable JavaScript, and consider upgrading to a web browser that
-      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-    </p>
-  </noscript>
+<br />
+<div class="video col-10 offset-1">
+  <h1 class="text-center"><%= current_lesson.title %></h1>
+  <p class="text-center">
+    <b><%= current_lesson.subtitle %></b>
+  </p>
+  <% if current_lesson.video.present? %>
+    <br />
+    <center><video id="my-video" class="video-js vjs-big-play-centered vjs-fluid" controls preload="auto"
+  poster="<%= image_path('black.jpg') %>" data-setup="{}">
+    <source src="<%= current_lesson.video.to_s %>" type='video/mp4'>
+    <noscript>
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a web browser that
+        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+      </p>
+    </noscript>
 </video></center>
 <% end %>
 <br />
+</div>
 <% if current_lesson.course_text.present? %>
   <br /><br/>
-  <div class="supplementary_material">
-    <h2 class="text-center">Supplementary Material</h2>
+  <div class="supplementary_material col-10 offset-1">
+    <h2 class="text-center red">Supplementary Material</h2>
     <br />
     <hr />
     <br />
     <p class="lesson-text"><%= current_lesson.course_text.html_safe %></p>
   </div>
 <% end %>
-</div>
+

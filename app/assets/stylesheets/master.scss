@@ -287,7 +287,6 @@ video {
 	border-top: 4px solid blue;
 	border-bottom: 4px solid blue;
 	border-radius: 1px;
-	height: 100%;
 }
 .supplementary_material {
 	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -296,13 +295,12 @@ video {
 	border-radius:2px;
 	margin: 3px;
 	border: 1px solid grey;
-	color: black;
 	background-color: #e8e8e8e8;
 	padding: 10px;
 	margin-bottom: 15px;
 	margin-right: auto;
 	margin-left: auto;
-	width: 85%;
+	text-decoration: underline;
 }
 .section-li {
 	border: 1px solid;
@@ -346,4 +344,8 @@ ul .header .fa {
 }
 .border-btn {
 	border: 1px solid white !important;
+}
+img {
+	width: 100%;
+	border-radius: 25px;
 }
