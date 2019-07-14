@@ -10,8 +10,22 @@ $(function() {
         });
       }
     });
-   });
+	 });
 </script>
+<script>
+	$(function() {
+	  $('.sections').sortable({
+      update: function( event, ui ) {
+        $.ajax({
+          type: 'PUT',
+          url: ui.item.data('update-url'),
+          dataType: 'json',
+          data: { section: { row_order_position: ui.item.index() } }
+        });
+      }
+    });
+	 });
+	</script>
 <br />
 <div class="course-box col-10 offset-1">
 	<br />
@@ -33,7 +47,7 @@ $(function() {
 	<%= link_to 'Preview As Student...', course_path(current_course), class: 'btn btn-warning float-right'%>
 	<br class="clear">
 	<br />
-	<ul>
+	<ul class="sections">
 		<% current_course.sections.each do |section| %>
 			<li>
 				<h2><%= section.title %></h2>
