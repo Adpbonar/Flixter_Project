@@ -7,4 +7,8 @@ class Section < ApplicationRecord
 
   validates :title, presence: true, length: { minimum: 4 }
 
+  def next_section
+    section = course.sections.where("row_order > ?", self.row_order).rank(:row_order).first
+    return section
+  end
 end

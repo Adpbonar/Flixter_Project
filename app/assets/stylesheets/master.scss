@@ -349,3 +349,10 @@ img {
 	width: 100%;
 	border-radius: 25px;
 }
+.btn-default {
+	color: whitesmoke;
+	font-weight:bold;
+}
+.btn-default:hover, .btn-default:focus {
+	color: green;
+}
