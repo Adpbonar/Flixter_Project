@@ -56,11 +56,48 @@
     </div>
      <div class="footer">
       <div class="container">
-       <b>Teachers</b>
-        <br />
-        <%= link_to 'Teach a Course', new_instructor_course_path %>
+       <div class="row">
+        <div class="col-12 col-sm-3">
+          <b>Teachers</b>
+          <br />
+          <%= link_to 'Teach a Course', new_instructor_course_path %>
+          <br />
+          <%= link_to 'My Dashboard', dashboard_path %>
+        </div>
+        <div class="col-12 col-sm-3">
+          <b>About</b>
+          <br />
+          <%= link_to 'This Project', about_path %>
+          <br />
+          <%= link_to 'Privacy Policy', privacy_path %>
+        </div>
+        <div class="col-12 col-sm-3">
+          <b>Contact</b>
+          <br />
+          <%= link_to 'devan.potter.bonar@gmail.com', 'mailto:devan.potter.bonar@gmail.com' %>
+          <br />
+          Based in
+          <br />
+          Ottawa, Ontario, Canada
+        </div>
+        <div class="col-12 col-sm-3">
+          <b>Follow Me</b>
+          <br />
+          <br />
+          <%= link_to 'https://github.com/Adpbonar' do %>
+              <span class="fa fa-github-square fa-2x social-button"></span>
+            <% end %>
+             <%= link_to 'https://www.facebook.com/dpotterbonar' do %>
+              <span class="fa fa-facebook-square fa-2x social-button"></span>
+            <% end %>
+            <%= link_to 'https://www.linkedin.com/in/devanpotterbonar/' do %>
+              <span class="fa fa-linkedin-square fa-2x social-button"></span>
+            <% end %>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
     <script src="http://vjs.zencdn.net/5.12.6/video.js"></script>
     <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
   </body>

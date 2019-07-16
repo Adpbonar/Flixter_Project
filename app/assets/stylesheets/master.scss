@@ -146,10 +146,15 @@ body {
 	width: 100%;
 	padding: 10px;
 	position: relative;
+	font-weight: 100;
 
 }
 .footer a {
 	color: white;
+}
+.footer b {
+	font-weight: bolder;
+	text-decoration: underline;
 }
 .white {
 	color: white;
@@ -352,7 +357,16 @@ img {
 .btn-default {
 	color: whitesmoke;
 	font-weight:bold;
+	background-color: #1B4F72;
+	border: 1px solid whitesmoke;
 }
 .btn-default:hover, .btn-default:focus {
-	color: green;
+	color: rgb(23, 199, 23);
+	border: 1px solid rgb(23, 199, 23);
+}
+.fa.fa-angle-right {
+	font-weight: bold;
+}
+.social-button {
+	padding: 4px;
 }
