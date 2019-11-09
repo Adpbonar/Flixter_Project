@@ -12,5 +12,5 @@ Built using Ruby 2.5.3 and Rails 5.2.3, two-sided, video-streaming marketplace p
 <br />
 <br />
 <img src="https://docs.google.com/uc?id=1X3nhXaZBz4vCdtQrwvaxHRfaI6ptohWu" />
-
-Kick the tires: https://flixter-devan-potterbonar.herokuapp.com
+<br />
+Kick the tires: https://flixter-devan-potterbonar.herokuapp.com.
