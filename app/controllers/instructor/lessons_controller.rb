@@ -12,7 +12,7 @@ class Instructor::LessonsController < ApplicationController
 
   def update
     current_lesson.update_attributes(lesson_params)
-    reder plain: 'updated!'
+    render plain: 'updated!'
   end
 
   private
