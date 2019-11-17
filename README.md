@@ -1,6 +1,6 @@
 # Flixter
 
-Built using Ruby 2.5.3 and Rails 5.2.3, two-sided, video-streaming marketplace platform that features credit card payment capabilities by integrating with Stripe. It also includes user role management, complex user interfaces made predominantly with JQuery, Bootstrap and CSS. By utilizing AWS S3, instructors are able to upload their video lessons. With WYSIWIG, they can provide rich-text supplementary materials and using JQuery they can reorder lessons to enhance their evolving curricula.
+Built using Ruby 2.5.3 and Rails 5.2.3, two-sided, video-streaming marketplace platform that features credit card payment capabilities by integrating with Stripe. It also includes user role management, complex user interfaces made predominantly with JQuery, Bootstrap and CSS. By utilizing AWS S3, instructors are able to upload their video lessons. With WYSIWYG, they can provide rich-text supplementary materials and using JQuery they can reorder lessons to enhance their evolving curricula.
 
 <img src="https://docs.google.com/uc?id=1a14q8yIxk3GOPkx2R5nnqewnNgCsIEFe" />
 <br />
